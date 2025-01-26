@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Project: Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="blog.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Bolat's blog</h1>
+        <div class="image-container">
+            <img src="Screenshot 2025-01-25 181627.png" alt="Cropped Image">
+        </div>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="" class="nav-items">Catalog</a></li>
+            <li><a href="" class="nav-items">Resources</a></li>
+            <li><a href="" class="nav-items">About</a></li>
+            <li><a href="" class="nav-items">Career center</a></li>
+            <li><a href="" class="nav-items" id="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h3>Contents</h3>
+    <ul>
+        <li> <a href="#first-post" class="link-to-post">What I’m learning</a> </li>
+        <li> <a href="#second-post" class="link-to-post">Projects I’m building</a> </li>
+        <li> <a href="#third-post" class="link-to-post">Challenges I’ve overcome</a> </li>
+    </ul>
+
+
+    <div id="posts">
+        <div>
+            <h2 id="first-post">What I’m learning</h2>
+            <h6>Posted on 17.05.2020</h6>
+
+            <p>
+                Every step of my journey offers new lessons. Whether I’m mastering Java, exploring database management,
+                or diving into modern technologies like robotics and nanotechnology, I’ll be documenting everything. You can
+                follow along with my learning process and get a glimpse into the tools and concepts that shape the world of programming today.
+            </p>
+        </div>
+        <div>
+            <h2 id="second-post">Projects I’m building</h2>
+            <h6>Posted on 18.05.2021</h6>
+
+            <p>
+                I believe that the best way to learn is by doing. From creating a chess game in Java to experimenting with coding
+                techniques in various programming languages, my projects are a reflection of what I’ve learned. You can check out
+                my work, find inspiration for your own projects, or simply see how things come together in the world of coding.
+            </p>
+
+            <button onclick="document.location='recipe_book.html'">Another web</button>
+        </div>
+
+        <div>
+            <h2 id="third-post">Challenges I’ve overcome</h2>
+            <h6>Posted on 17.05.2022</h6>
+
+            <p>
+                Programming can be tough, but every challenge brings growth. Whether it's debugging tricky issues, hitting a
+                breakthrough moment, or learning from the mistakes I’ve made, I’ll be sharing the obstacles I’ve encountered and
+                the lessons I’ve picked up along the way. If you’re in the trenches yourself, I hope you’ll find my experiences helpful.
+            </p>
+        </div>
+    </div>
+
+<footer id="to-contact">
+    <p>fdhjs</p>
+    <p>sadfg</p>
+</footer>
+
+    <script>
+        document.querySelectorAll('.link-to-post').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetID = this.getAttribute('href').slice(1);
+                const target = document.getElementById(targetID);
+
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 115,
+                        behavior: 'smooth',
+                    });
+                }
+            });
+        });
+
+        document.querySelector('#contact').addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector('#to-contact');
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth',
+                })
+            }
+        });
+
+    </script>
+</body>
+</html>

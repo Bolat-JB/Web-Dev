@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="eventinv.css">
+    <title>Project: Event Invite</title>
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <h1>A & B's Wedding</h1>
+            <p>Join us to celebrate together</p>
+        </header>
+        <section id="details">
+            <p>The details:</p>
+            <ul id="details-list">
+                <li>Date: <span>August 14, 2025</span></li>
+                <li>Time: <span>4:00 PM</span></li>
+                <li>Venue: <span>Rose Garden Banquet Hall, Downtown</span></li>
+                <li>Dress Code: <span>Formal, Black Tie Optional</span></li>
+            </ul>
+        </section>
+        <footer>
+            <button id="button-id">RSVP</button>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("button-id").addEventListener("click", function () {
+            const address = "https://en.wikipedia.org/wiki/Wedding";
+            window.open(address, "_blank");
+        })
+    </script>
+</body>
+</html>

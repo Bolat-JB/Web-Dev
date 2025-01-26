@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-style: italic;
+    font-size: 30px;
+    display: flex;
+    margin: auto;
+    justify-content: right;
+    background-color: #402f13;
+    color: aliceblue;
+}
+
+.image-container{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100%;
+    margin: 10px;
+    text-align: right;
+}
+.image-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+a:hover{
+    background-color: rgba(255, 255, 24, 1);
+    color: blue;
+}
+nav{
+    overflow-x: auto;
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav ul{
+    border: 3px solid white;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-decoration: none;
+    align-items: center;
+    white-space: nowrap;
+}
+nav li{
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+}
+.nav-items{
+    display: inline-block;
+
+}
+a.nav-items:hover{
+    background-color: #47300f;
+    text-decoration: none;
+    color: white;
+    transform: scale(1.5);
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+a.nav-items:visited{
+    text-decoration: underline;
+    color: #7da6ca;
+}
+#posts{
+    align-items: center;
+    font-style: italic;
+}
+#posts div{
+    width: 100%;
+    padding: 90px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+div button{
+    font: bold 25px arial;
+    background-color: #1c9e9a;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 10px;
+}
+div button:hover{
+
+    background-color: #7da6ca;
+    transform: scale(1.2);
+}
+
+
+footer{
+    margin: 0;
+    padding: 60px 0;
+    background-color: #1d2a35;
+    color: #83cd65;
+}
+footer p{
+    margin: 0;
+}
