@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8">
+    <style>
+        img{
+            float:left;
+            margin-right:80px;
+            width: 400px;
+        }
+        body{
+            font-size:20px;
+        }
+        table{
+            width: 500px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        div.container{
+            clear: left;
+            margin-top: 50px;
+            padding-left: 10px;
+            background-color: lightgrey;
+            overflow: auto;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        div.inner{
+            float:left;
+            border: 1px solid black;
+            display: grid;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .container{
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;background: #00a5d2">Bolat's Recipe Book</h1>
+
+    <h2>Contents:</h2>
+    <ol>
+        <li><a href="#Chicken-Stir-Fry">Chicken-Stir-Fry</a></li>
+        <li><a href="#caesar_salad">Classic Caesar Salad</a> </li>
+        <li><a href="#homemade-pizza">Homemade Pizza</a> </li>
+    </ol>
+    <div class="container">
+        <h2 id="Chicken-Stir-Fry">Recipe #1 Chicken Stir-Fry</h2>
+        <img src="https://www.cookingclassy.com/wp-content/uploads/2019/12/chicken-stir-fry-1.jpg" alt="Chicken Stir-Fry">
+        <div class="inner">
+            <ul class="container">
+                <li>Prep Time: 10 minutes</li>
+                <li>Cook Time: 15 minutes</li>
+                <li>Serves: 2-3</li>
+            </ul>
+
+            <table>
+                <thead>
+                    <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> <td>chicken breasts (sliced thinly)</td><td>2</td> </tr>
+                    <tr> <td>bell pepper</td> <td>1</td> </tr>
+                    <tr> <td>carrot</td> <td>1</td> </tr>
+                    <tr> <td>soy sauce</td><td>2 tbsp</td> </tr>
+                    <tr> <td>oyster sauce</td><td>1 tbsp</td> </tr>
+                    <tr> <td>sesame oil</td><td>1 tbsp</td> </tr>
+                    <tr> <td>cornstarch (optional)</td><td>1 tsp</td> </tr>
+                    <tr> <td>sesame seeds(optional)</td><td>1</td> </tr>
+                </tbody>
+            </table>
+            <p><strong>Instructions:</strong><br>
+                <strong>Step 1: </strong> Heat sesame oil in a pan and cook the chicken until golden. Remove and set aside.<br>
+                <strong>Step 2: </strong> Stir-fry the vegetables until tender-crisp.<br>
+                <strong>Step 3: </strong> Add soy sauce, oyster sauce, and cornstarch mixed with a little water to thicken.<br>
+                <strong>Step 4: </strong> Toss the chicken back in and stir to combine. Sprinkle with sesame seeds before serving.
+            </p>
+
+            <p><em>Source: <a href="https://www.cookingclassy.com/chicken-and-vegetable-stir-fry/" target="_blank">Some recipes websites</a></em></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 id="caesar_salad">Recipe #2 Classic Caesar Salad</h2>
+        <img src="https://foolproofliving.com/wp-content/uploads/2013/12/Classic-Caesar-Salad-recipe.jpg" alt="Classic Caesar Salad">
+        <div class="inner">
+            <ul class="container">
+                <li>Prep Time: 10 minutes</li>
+                <li>Cook Time: None (if using pre-cooked chicken)</li>
+                <li>Serves: 2</li>
+            </ul>
+
+            <table>
+                <thead><tr><th>Ingredients</th><th>Quantity</th></tr>
+                </thead>
+                <tbody>
+                    <tr> <td>Romaine lettuce</td> <td>1/2 cup</td> </tr>
+                    <tr> <td>Croutons</td><td>1/2 cup</td> </tr>
+                    <tr> <td>Parmesan cheese</td> <td>2 tbsp</td> </tr>
+                    <tr> <td>Caesar dressing</td><td>2 tbsp</td></tr>
+                    <tr> <td>Chicken breast (optional, grilled or sliced)</td> <td>1</td> </tr>
+                </tbody>
+            </table>
+            <p><strong>Instructions:</strong><br>
+                <strong>Step 1: </strong>Wash and chop the lettuce, then toss with Caesar dressing.<br>
+                <strong>Step 2: </strong>Add croutons and Parmesan cheese.<br>
+                <strong>Step 3: </strong>Top with sliced grilled chicken for a heartier option.
+            </p>
+
+            <p><em>Source: <a href="https://foolproofliving.com/classic-caesar-salad/" target="_blank">Some recipes websites</a></em></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 id="homemade-pizza">Recipe #3 Homemade Pizza</h2>
+        <img src="https://theschmidtywife.com/wp-content/uploads/2021/02/Featured_Homemade_Pizza.jpg" alt="Homemade Pizza">
+        <div class="inner">
+            <ul class="container">
+                <li>Prep Time: 15 minutes (if using pre-made dough)</li>
+                <li>Cook Time: 10-15 minutes</li>
+                <li>Serves: 2-3</li>
+            </ul>
+
+            <p><strong>Ingredients:</strong></p>
+            <ul>
+                <li>Pizza dough (store-bought or homemade)</li>
+                <li>Tomato sauce</li>
+                <li>Mozzarella cheese</li>
+                <li>Toppings of choice (pepperoni, mushrooms, olives, bell peppers, etc.)</li>
+            </ul>
+
+            <p><strong>Instructions:</strong><br>
+                <strong>Step 1: </strong>Preheat the oven to 220°C (425°F).<br>
+                <strong>Step 2: </strong>Roll out the pizza dough and spread with tomato sauce.<br>
+                <strong>Step 3: </strong>Add shredded mozzarella and your favorite toppings.<br>
+                <strong>Step 4: </strong>Bake for 10-15 minutes or until the crust is golden and the cheese is bubbling.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
