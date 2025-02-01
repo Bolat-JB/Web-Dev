@@ -1,0 +1,133 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    margin: 0;
+}
+
+.main{
+    margin: auto;
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    /*align-items: center;*/
+    padding: 70px 0;
+}
+.image-container{
+    width: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#phone-img{
+    max-width: 530px;
+    margin: 40px 112px 0 0;
+    position: absolute;
+
+}
+#secondimg{
+    width: 288px;
+    position: absolute;
+
+}
+i{
+    font-size: 200%;
+}
+#insta{
+    margin: 50px 0;
+}
+.form{
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.7);
+    padding: 25px 0 0 0;
+    /*border: 1px solid white;*/
+    margin-bottom: 30px;
+}
+
+#form-place{
+    margin: auto;
+}
+input[type=text], input[type=password], button{
+    margin: 0 40px 10px 40px;
+    width: 300px;
+    background-color: rgba(57, 57, 57, 0.32);
+    border-radius: 5px;
+    line-height: 35px;
+    outline: none;
+
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+#login{
+    background-color: rgba(0, 165, 255, 0.7);
+    color: white;
+}
+.line{
+    border-bottom: 1px solid rgba(165, 165, 165, 0.5);
+    display: inline-block;
+    width: 150px;
+}
+.or-in-line{
+    display: inline-block;
+}
+#orline{
+    margin: 20px 0;
+}
+
+#facebookIcon{
+    margin: 15px 15px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#facebookIcon img{
+    width: 20px;
+    padding-right: 5px;
+}
+#facebookIcon a{
+    color: #2b5eca;
+    text-decoration: none;
+}
+#forgotten-pass{
+    margin: 15px 15px;
+}
+#forgotten-pass a{
+    color: white;
+    text-decoration: none;
+}
+
+#get-app{
+    text-align: center;
+}
+
+#get-app img{
+    height: 44px;
+    margin: 0 20px 0 0;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-content ul li, p{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 5px 5px 5px;
+}
+.footer-content ul li a, p{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+.footer-content ul li a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.footer-content p{
+    display: inline-block;
+}
