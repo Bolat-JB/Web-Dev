@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*alert( null || 2 || undefined );
+        alert( alert(1) || 2 || alert(3) );
+        alert( 1 && null && 2 );
+        alert( alert(1) && alert(2) );
+        alert( null || 2 && 3 || 4 );*/
+        let login = prompt("Enter login name", "");
+
+        if(login == "Admin") {
+            let password = prompt("Enter password", "");
+            if(password === "TheMaster") {
+                alert("You are welcome");
+            }else if(password === "" && password === null) {
+                alert("Canceled");
+            }
+            else{
+                alert("Wrong password");
+            }
+        }else if(login ==="" && login === null) alert();
+        else alert("I dont know you");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

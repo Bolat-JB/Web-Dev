@@ -16,15 +16,18 @@ body{
     padding: 70px 0;
 }
 .image-container{
-    width: 530px;
+    width: 100%;
+    max-width: 530px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 #phone-img{
-    max-width: 530px;
+    /*max-width: 530px;*/
+    max-width: 100%;
     margin: 40px 112px 0 0;
-    position: absolute;
+    position: relative;
 
 }
 #secondimg{

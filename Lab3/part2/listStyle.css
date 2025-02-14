@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    padding: 20px 0;
+    background-color: #402f13;
+    color: #9c9c9c;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto 200px auto;
+}
+.todolist{
+    width: 350px;
+}
+ul {
+    border: 1px solid #a3a3a3;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 7px;
+}
+#listitself{
+    max-height: 200px;
+    overflow: auto;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
