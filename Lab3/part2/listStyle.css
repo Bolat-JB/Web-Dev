@@ -14,7 +14,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 200px auto 200px auto;
+    margin: 200px auto;
 }
 .todolist{
     width: 350px;

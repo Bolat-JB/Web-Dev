@@ -1,10 +1,9 @@
-
-let counter = 0;
 function addTask() {
 let input = document.getElementById("taskInput");
 let taskText = input.value.trim();
-if (taskText === "") return;
-counter++;
+if (taskText === ""){
+    return;
+}
 let li = document.createElement("li");
 
 let checkbox = document.createElement("input");
@@ -27,5 +26,11 @@ li.appendChild(span);
 li.appendChild(deleteButton);
 document.getElementById("listitself").appendChild(li);
 input.value = "";
+}
 
+function removeTask() {
+    let list = document.getElementById("listitself");
+    while (list.firstChild) {
+        list.removeChild(list.firstChild);
+    }
 }

@@ -1,0 +1,25 @@
+.main-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items a{
+  text-decoration: none;
+}
+
+.item-block{
+  top: 0;
+  width: 20%;
+  padding: 16px;
+  margin: -0.5px;
+  border: 1px solid black;
+}
+.item-block img{
+  width: 200px;
+}
+
+.description{
+  max-height: 90px;
+  overflow: hidden;
+}
