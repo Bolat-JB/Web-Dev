@@ -1,8 +1,11 @@
 <div class="categories">
-  <button (click)="selectCategory('Phone')">Phone</button>
-  <button (click)="selectCategory('TV')">TV</button>
-  <button (click)="selectCategory('Laptop')">Laptop</button>
-  <button (click)="selectCategory('Watches')">Watches</button>
-  <button (click)="selectCategory('Chocolate')">Chocolate</button>
+  <button (click)="selectCategory('Phone')" [ngClass]="{'selected': selectedCategory === 'Phone'}">Phone</button>
+  <button (click)="selectCategory('TV')" [ngClass]="{'selected': selectedCategory === 'TV'}">TV</button>
+  <button (click)="selectCategory('Laptop')" [ngClass]="{'selected': selectedCategory === 'Laptop'}">Laptop</button>
+  <button (click)="selectCategory('Watches')" [ngClass]="{'selected': selectedCategory === 'Watches'}">Watches</button>
+  <button (click)="selectCategory('Chocolate')" [ngClass]="{'selected': selectedCategory === 'Chocolate'}">Chocolate</button>
+</div>
+<div>
+  <p>Categories {{selectedCategory}}</p>
 </div>
 <router-outlet></router-outlet>

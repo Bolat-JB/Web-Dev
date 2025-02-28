@@ -32,7 +32,9 @@ export class ProductItemComponent {
     }
   }
   like():void {
-    this.item.likes++;
+    if(this.item.likes <= 0){
+      this.item.likes++;
+    }
   }
 
   remove(id: number):void {

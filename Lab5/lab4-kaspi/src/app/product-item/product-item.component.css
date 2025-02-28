@@ -4,10 +4,20 @@
 
 .item-block img{
   width: 200px;
-
 }
 
 .description{
   max-height: 90px;
   overflow: hidden;
+}
+
+.item-block button{
+  background-color: #ffb7b7;
+  border-radius: 10px;
+
+}
+.item-in-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

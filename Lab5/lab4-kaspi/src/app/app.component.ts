@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
-import { ActivatedRoute } from '@angular/router';
+import { NgClass} from '@angular/common';
 import { Items } from './items';
 import { ProductService} from './product.service';
+import {NONE_TYPE} from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, NgClass],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -19,9 +20,16 @@ export class AppComponent {
     this.productsList = this.ProductService.getproducts();
     this.filteredProducts = this.productsList;
   }
+  selectedCategory: string | null = null;
 
   selectCategory(category: string) {
-    this.filteredProducts = this.productsList.filter(product => product.category === category);
+    if (this.selectedCategory === category) {
+      this.selectedCategory = null;
+      this.filteredProducts = this.productsList;
+    } else {
+      this.selectedCategory = category;
+      this.filteredProducts = this.productsList.filter(product => product.category === category);
+    }
   }
   getProductsList(): Items[] {
     return this.productsList;

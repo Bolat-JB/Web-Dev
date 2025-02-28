@@ -2,16 +2,27 @@
   display: flex;
   padding: 5px;
   justify-content: center;
-  background-color: rgb(184, 54, 54);
+  /*background-color: rgb(184, 54, 54);*/
   margin-bottom: 10px;
 }
 
 .categories button{
-  width: 80px;
+  width: 120px;
   margin: 5px;
   padding: 10px;
   text-align: center;
-  background-color: #68e6c9;
+  background-color: #68e66e;
   border: none;
   border-radius: 10px;
+  font-size: 20px;
+}
+.categories button:hover{
+  background-color: #00e1b3;
+}
+.categories button:active{
+  background-color: #007a61;
+}
+
+.categories button.selected{
+  background-color: #08bc7c;
 }
