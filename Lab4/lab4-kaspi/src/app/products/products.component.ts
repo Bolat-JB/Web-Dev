@@ -171,5 +171,4 @@ export class ProductsComponent {
       rating: 5.0
     },
   ];
-
 }

@@ -12,13 +12,14 @@
   top: 0;
   width: 20%;
   padding: 16px;
-  margin: 1px;
   border: 1px solid black;
   border-radius: 10px;
-
+  margin: 10px;
+  box-shadow: #626263 1px 1px 3px;
 }
 .item-block img{
   width: 200px;
+
 }
 
 .description{

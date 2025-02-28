@@ -1,0 +1,13 @@
+.items a{
+  text-decoration: none;
+}
+
+.item-block img{
+  width: 200px;
+
+}
+
+.description{
+  max-height: 90px;
+  overflow: hidden;
+}

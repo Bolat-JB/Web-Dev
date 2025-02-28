@@ -1,0 +1,5 @@
+<div class="main-block">
+  <div *ngFor="let item of appComponent.filteredProducts" class="item-block">
+    <app-product-item [item]="item"></app-product-item>
+  </div>
+</div>

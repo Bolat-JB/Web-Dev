@@ -1,0 +1,17 @@
+.categories{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  background-color: rgb(184, 54, 54);
+  margin-bottom: 10px;
+}
+
+.categories button{
+  width: 80px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #68e6c9;
+  border: none;
+  border-radius: 10px;
+}
