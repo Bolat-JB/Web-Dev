@@ -1,0 +1,23 @@
+<div>
+  <div class="add-album">
+    <h1 id="add-album-title">Albums</h1>
+    <div id="adding-space">
+      <input type="text" [(ngModel)]="newAlbumTitle" placeholder="Add album">
+      <button type="button"   (click)="createAlbum()">Add</button>
+    </div>
+  </div>
+  <div class="elem" *ngFor="let album of albums">
+
+      <div class="elem-text">
+        <p>{{album.id}}.</p>
+        <a [routerLink]="['/albums', album.id]">{{album.title}}</a>
+      </div>
+
+    <div class="button">
+      <button type="button" (click)="deleteAlbum(album.id)">Delete</button>
+    </div>
+  </div>
+</div>
+
+
+

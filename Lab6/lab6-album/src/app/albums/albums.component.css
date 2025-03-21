@@ -1,0 +1,55 @@
+.elem{
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 50px 10px;
+
+}
+.elem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elem-text{
+  display: flex;
+  align-items: center;
+}
+.elem-text p{
+  margin: 15px;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+button{
+  border: none;
+  background: #d87070;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 20px;
+}
+#add-album-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+#adding-space{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#adding-space button{
+  margin: 0 15px;
+  padding: 15px 25px;
+  border-radius: 25px;
+}
+#adding-space button:hover{
+  background: #aa3e3e;
+}
+#adding-space input{
+  padding: 13px;
+}
