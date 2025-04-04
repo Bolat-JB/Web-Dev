@@ -1,13 +1,8 @@
-from rest_framework import serializers
-from .models import Product, Category
+from django.core import serializers
 
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
-        fields = '__all__'
-    
-class ProductSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Product
-        fields = '__all__'
-
+def serialize_model(model_instance):
+    data = serializers.serialize('json', [model_instance])[0]
+    return data
+def serialize_model_list(model_instances):
+    data = serializers.serialize('json', model_instances)
+    return data
