@@ -1,0 +1,18 @@
+nav{
+  background-color: #52b2ff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0 0 0 20px;
+}
+nav ul li{
+  margin: 0 20px;
+  font-size: 28px;
+}
+nav ul li:hover{
+  color: #a12828;
+}

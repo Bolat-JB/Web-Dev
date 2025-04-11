@@ -1,0 +1,34 @@
+.elem{
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 50px 10px;
+
+}
+.elem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elem-text{
+  display: flex;
+  align-items: center;
+}
+.elem-text p{
+  margin: 15px;
+}
+
+
+.elem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elem-text{
+  display: flex;
+  align-items: center;
+}
+.elem-text p{
+  margin: 15px;
+}
+
